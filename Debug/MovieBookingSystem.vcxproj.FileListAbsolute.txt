@@ -1,0 +1,2 @@
+C:\Users\dnrtj\source\repos\MovieBookingSystem\Debug\MovieBookingSystem.exe
+C:\Users\dnrtj\source\repos\MovieBookingSystem\Debug\MovieBookingSystem.pdb
