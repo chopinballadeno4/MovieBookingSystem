@@ -141,6 +141,10 @@
   <ItemGroup>
     <ClCompile Include="MovieBookingSystem.cpp" />
     <ClCompile Include="Study.cpp" />
+    <ClCompile Include="user.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="user.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

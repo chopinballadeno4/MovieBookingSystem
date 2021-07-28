@@ -10,4 +10,6 @@
 6. 지역변수 , 전역변수 , static 변수 차이를 정리
 7. 파일 입출력 https://jdm.kr/blog/170
 8. c++ string split 하는 방법 https://www.acmicpc.net/board/view/25973 
+9. c++ class 헤더 나눠서 구분하기 https://shiinachianti.tistory.com/18 
+
 */

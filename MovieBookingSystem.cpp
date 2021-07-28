@@ -7,66 +7,13 @@
 #include <Windows.h>
 #include <fstream>
 #include <sstream>
+
+#include "user.h"
 using namespace std;
 
 //-------------------------------------------------------------------------
+
 vector<user> userlist;
-
-class user {
-private:
-    string name;
-    string phonenum;
-    string email;
-    string id;
-    int pw;
-
-public:
-    user(string name, string phonenum, string email, string id, int pw) {
-        //this->name = name;
-        this->name = name;
-        this->phonenum = phonenum;
-        this->email = email;
-        this->id = id;
-        this->pw = pw;
-    }
-
-    ~user() {}
-
-    void setname(string name) {
-        this->name = name;
-    }
-    string getname() {
-        return name;
-    }
-
-    void setphonenum(string phonenum) {
-        this->phonenum = phonenum;
-    }
-    string getphonenum() {
-        return phonenum;
-    }
-
-    void setemail(string email) {
-        this->email = email;
-    }
-    string getemail() {
-        return email;
-    }
-
-    void setid(string id) {
-        this->id = id;
-    }
-    string getid() {
-        return id;
-    }
-
-    void setpw(int pw) {
-        this->pw = pw;
-    }
-    int getpw() {
-        return pw;
-    }
-};
 
 void makeuserlist() {
     string filePath = "C:\\Users\\dnrtj\\Desktop\\프로젝트\\MovieBookingDB\\user.txt";
@@ -80,7 +27,9 @@ void makeuserlist() {
             string email; ss >> email;
             string id; ss >> id;
             int pw; ss >> pw;
-            userlist.push_back(new user(name, phonenum, email, id, pw));
+            //userlist.push_back(user(name, phonenum, email, id, pw));
+            user tempuser(name, phonenum, email, id, pw);
+            userlist.push_back(tempuser);
         }
         openFile.close();
     }
@@ -170,7 +119,7 @@ void login() {
 
 int main()
 {
-    makeuserlist(); // 배열로 메모리 할당
+    makeuserlist(); // user 클래스 vector로 
     login();
     return 0;
 }
