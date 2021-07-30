@@ -11,5 +11,6 @@
 7. 파일 입출력 https://jdm.kr/blog/170
 8. c++ string split 하는 방법 https://www.acmicpc.net/board/view/25973 
 9. c++ class 헤더 나눠서 구분하기 https://shiinachianti.tistory.com/18 
-
+10. c++에서의 string 비교연산은 compare() 함수를 이용한다. 문자열이 같으면
+	a.compare(b)==0 이면 a와 b 문자열이 같은것이고 결과값이 -1 이면 다른것이다.
 */

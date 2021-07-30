@@ -11,6 +11,7 @@ private:
     int pw;
 
 public:
+    user();
     user(string name, string phonenum, string email, string id, int pw);
     ~user();
 

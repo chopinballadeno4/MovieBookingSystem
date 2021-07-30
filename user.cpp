@@ -3,7 +3,13 @@
 using namespace std;
 
 
-
+   user::user() {
+       this->name = "";
+       this->phonenum = "";
+       this->email = "";
+       this->id = "";
+       this->pw = 0;
+   }
    user::user(string name, string phonenum, string email, string id, int pw) {
         //this->name = name;
         this->name = name;
