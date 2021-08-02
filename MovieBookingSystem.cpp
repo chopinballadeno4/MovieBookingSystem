@@ -1,5 +1,6 @@
 ﻿//#define endl '\n' 왜 오류가 나오는지 잘 모르겠음
 #define _CRT_SECURE_NO_WARNINGS
+#define filepath "C:\\Users\\dnrtj\\Desktop\\project\\MovieBookingDB\\user.txt"
 #include <iostream>
 //#include <stdio.h>
 #include <string>
@@ -12,12 +13,12 @@ using namespace std;
 
 //-------------------------------------------------------------------------
 
-void sc() {
+const void sc() {
     Sleep(3000);
     system("cls");
 }
 
-void blank() {
+const void blank() {
     cout << '\n';
     cout << '\n';
     cout << '\n';
@@ -25,8 +26,8 @@ void blank() {
 
 vector<user> userlist;
 
-void makeuserlist() {
-    string filePath = "C:\\Users\\dnrtj\\Desktop\\프로젝트\\MovieBookingDB\\user.txt";
+void makeuserlist() { 
+    string filePath = filepath;
     ifstream openFile(filePath.data());
     if (openFile.is_open()) {
         string line;
@@ -56,11 +57,11 @@ void makeId() {
     int pw;
 
     cout << "====== 회원 가입 ======" << '\n';
-    cout << "1. 이름 : "; cin >> name; 
-    cout << "2. 전화번호 : "; cin >> phonenum; 
-    cout << "3. email : "; cin >> email;
-    cout << "4. id : "; cin >> id; 
-    cout << "5. pw : "; cin >> pw;
+    cout << "1. 이름: "; cin >> name; 
+    cout << "2. 전화번호: "; cin >> phonenum; 
+    cout << "3. email: "; cin >> email;
+    cout << "4. id: "; cin >> id; 
+    cout << "5. pw: "; cin >> pw;
 
     for (int i = 0; i < userlist.size(); i++) {
         if (userlist.at(i).getphonenum().compare(phonenum) == 0) {
@@ -71,22 +72,25 @@ void makeId() {
         if (userlist.at(i).getid().compare(id) == 0) {
             blank();
             cout << "!!!이미 존재하는 ID입니다.";
-            sc();
-            makeId();
+            return;
         }
     }
-    string filePath = "C:\\Users\\dnrtj\\Desktop\\프로젝트\\MovieBookingDB\\user.txt";
-    ofstream writeFile(filePath.data());
+
+    string filePath = filepath;
+    ofstream writeFile(filePath.data() , ios::app);
     if (writeFile.is_open()) {
-        writeFile << name + phonenum + email + id + to_string(pw);
+        writeFile << name +" "+phonenum+" "+ email+" "+ id+" "+to_string(pw)<<'\n';
+        blank();
+        cout << "회원가입 완료...!";
     }
+    writeFile.close();
 }
 
 void findId() {
     int selectnum;
     cout << "====== ID/PW 찾기 ======" << '\n';
     cout << "1.ID  2.PW  3.되돌아가기" << '\n';
-    cout << "\n원하는 메뉴 : ";
+    cout << "\n메뉴 선택 : ";
     cin >> selectnum;
     blank();
     
@@ -154,7 +158,7 @@ void login() {
     cout << "=                                             =" << '\n';
     cout << "=   1. 로그인   2. ID/PW 찾기   3. 회원가입   =" << '\n';
     cout << "===============================================" << '\n';
-    cout << "원하는 메뉴: ";
+    cout << "메뉴 선택: ";
     cin >> selectnum;
     blank();
 
