@@ -13,4 +13,5 @@
 9. c++ class 헤더 나눠서 구분하기 https://shiinachianti.tistory.com/18 
 10. c++에서의 string 비교연산은 compare() 함수를 이용한다. 문자열이 같으면
 	a.compare(b)==0 이면 a와 b 문자열이 같은것이고 결과값이 -1 이면 다른것이다.
+11. 헤더파일을 구분해 놓은 이유 https://namoeye.tistory.com/entry/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EA%B3%BC%EC%A0%95-%EC%A0%95%EB%A6%AC-cpp%EC%99%80-h%EB%A5%BC-%EB%82%98%EB%88%84%EB%8A%94-%EC%9D%B4%EC%9C%A0
 */

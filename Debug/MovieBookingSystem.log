@@ -1,7 +1,9 @@
 ﻿  MovieBookingSystem.cpp
-C:\Users\dnrtj\source\repos\MovieBookingSystem\MovieBookingSystem.cpp(66,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\MovieBookingSystem.cpp(105,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\MovieBookingSystem.cpp(123,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\MovieBookingSystem.cpp(146,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\MovieBookingSystem.cpp(175,20): warning C4101: 'exception' :참조되지 않은 지역 변수입니다.
+  userpart.cpp
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(61,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(99,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(117,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(140,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(169,20): warning C4101: 'exception' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
   MovieBookingSystem.vcxproj -> C:\Users\dnrtj\source\repos\MovieBookingSystem\Debug\MovieBookingSystem.exe
