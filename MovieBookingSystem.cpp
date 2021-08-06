@@ -1,6 +1,8 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include "user.h"
 #include "userpart.h"
+#include "movie.h"
+#include "moviepart.h"
 using namespace std;
 
 //-------------------------------------------------------------------------
