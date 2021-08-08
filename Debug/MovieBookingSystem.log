@@ -1,12 +1,7 @@
-﻿  MovieBookingSystem.cpp
-  Study.cpp
-  userpart.cpp
-C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(61,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(99,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(117,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(140,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(169,20): warning C4101: 'exception' :참조되지 않은 지역 변수입니다.
-  코드를 생성하고 있습니다...
-  LINK : C:\Users\dnrtj\source\repos\MovieBookingSystem\Debug\MovieBookingSystem.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
-userpart.obj : error LNK2005: "class std::vector<class user,class std::allocator<class user> > userlist" (?userlist@@3V?$vector@Vuser@@V?$allocator@Vuser@@@std@@@std@@A)이(가) MovieBookingSystem.obj에 이미 정의되어 있습니다.
-C:\Users\dnrtj\source\repos\MovieBookingSystem\Debug\MovieBookingSystem.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
+﻿  userpart.cpp
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(62,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(100,31): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(118,31): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(141,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\dnrtj\source\repos\MovieBookingSystem\userpart.cpp(170,24): warning C4101: 'exception' :참조되지 않은 지역 변수입니다.
+  MovieBookingSystem.vcxproj -> C:\Users\dnrtj\source\repos\MovieBookingSystem\Debug\MovieBookingSystem.exe

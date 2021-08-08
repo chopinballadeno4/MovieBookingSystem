@@ -8,11 +8,13 @@ using namespace std;
 
 //vector<user> userlist;
 
-const void sc();
-const void blank();
+namespace User {
+	const void sc();
+	const void blank();
 
-void makeuserlist();
-void makeId();
-void findId();
-user& inputId(string id, int pw);
-void login();
+	void makeuserlist();
+	void makeId();
+	void findId();
+	user& inputId(string id, int pw);
+	void login();
+}

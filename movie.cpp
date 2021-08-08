@@ -8,13 +8,17 @@ using namespace std;
 movie::movie() {
 	this->name = "";
 	this->time = "";
-	this->seat = 0;
+	this->seat = "";
 }
 
-movie::movie(string name, string time, ll seat) {
+movie::movie(string name, string time, string seat) {
 	this->name = name;
 	this->time = time;
 	this->seat = seat;
+}
+
+movie::~movie() {
+
 }
 
 string movie::getname() {
@@ -33,11 +37,11 @@ void movie::settime(string time) {
 	this->time = time;
 }
 
-ll movie::getseat() {
+string movie::getseat() {
 	return seat;
 }
 
-void movie::setseat(ll seat) {
+void movie::setseat(string seat) {
 	this->seat = seat;
 }
 

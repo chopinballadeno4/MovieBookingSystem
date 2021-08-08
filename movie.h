@@ -8,11 +8,11 @@ using namespace std;
 class movie {
 	string name;
 	string time;
-	ll seat;
+	string seat;
 
 public:
 	movie();
-	movie(string name, string time, ll seat);
+	movie(string name, string time, string seat);
 	~movie();
 
 	string getname();
@@ -21,6 +21,6 @@ public:
 	string gettime();
 	void settime(string time);
 
-	ll getseat();
-	void setseat(ll seat);
+	string getseat();
+	void setseat(string seat);
 };
