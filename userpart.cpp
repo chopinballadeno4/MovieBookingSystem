@@ -8,6 +8,8 @@
 #include <vector>
 #include "user.h"
 #include "userpart.h"
+#include "movie.h"
+#include "moviepart.h"
 
 using namespace std;
 
@@ -147,7 +149,7 @@ namespace User {
         throw pw;
     }
 
-    void login() { // 로그인 메인화면 
+    user& login() { // 로그인 메인화면 
         int selectnum;
         cout << "===============================================" << '\n';
         cout << "=              ...멍멍극장...                 =" << '\n';
@@ -166,6 +168,7 @@ namespace User {
             try {
                 user& who = inputId(id, pw);
                 cout << "로그인성공";
+                return who; // 여기에서만 return 해도 됌?
             }
             catch (int exception) {
                 cout << "\n";
@@ -191,6 +194,5 @@ namespace User {
             sc();
             login();
         }
-        return;
     }
 }

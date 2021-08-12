@@ -16,5 +16,5 @@ namespace User {
 	void makeId();
 	void findId();
 	user& inputId(string id, int pw);
-	void login();
+	user& login();
 }

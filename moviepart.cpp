@@ -7,6 +7,8 @@
 #include <sstream>
 #include "movie.h"
 #include "moviepart.h"
+#include "user.h"
+#include "userpart.h"
 
 using namespace std;
 
@@ -28,6 +30,10 @@ namespace Movie {
 			}
 			openFile.close();
 		}
+	}
+
+	void reserve(user& who) {
+
 	}
 
 
