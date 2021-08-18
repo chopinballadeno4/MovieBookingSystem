@@ -4,8 +4,9 @@
 #include "userpart.h"
 
 
-namespace Movie{
+namespace Movie {
 	void makemovielist();
+	void separate(string name, string time , string seat);
 	void reserve(user& who);
 	void moviechart();
 	void Editpersonalinformation();

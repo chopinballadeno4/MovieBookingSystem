@@ -2,25 +2,26 @@
 #define ll long long
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 class movie {
 	string name;
-	string time;
-	string seat;
+	vector<string> time;
+	vector<string> seat;
 
 public:
 	movie();
-	movie(string name, string time, string seat);
+	movie(string name, vector<string> time, vector<string> seat);
 	~movie();
 
 	string getname();
 	void setname(string name);
 
-	string gettime();
-	void settime(string time);
+	vector<string> gettime();
+	void settime(vector<string> time);
 
-	string getseat();
-	void setseat(string seat);
+	vector<string> getseat();
+	void setseat(vector<string> seat);
 };
